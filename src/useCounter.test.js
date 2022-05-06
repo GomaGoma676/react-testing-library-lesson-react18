@@ -1,8 +1,5 @@
 import { useCounter } from "./useCounter";
 import { act, renderHook } from "@testing-library/react-hooks";
-import { cleanup } from "@testing-library/react";
-
-afterEach(() => cleanup());
 
 describe("useCounter custom Hook", () => {
   it("Should increment by 1", () => {

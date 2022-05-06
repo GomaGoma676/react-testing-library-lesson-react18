@@ -1,13 +1,10 @@
 import React from "react";
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Provider } from "react-redux";
 import Redux from "./Redux";
 import { configureStore } from "@reduxjs/toolkit";
 import customCounterReducer from "../src/features/customCounter/customCounterSlice";
-afterEach(() => {
-  cleanup();
-});
 
 describe("Redux Integration Test", () => {
   let store;

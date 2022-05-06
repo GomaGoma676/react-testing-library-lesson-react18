@@ -1,9 +1,7 @@
 import React from "react";
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import ClickRender from "./ClickRender";
-
-afterEach(() => cleanup());
 
 describe("User Event test", () => {
   it("Should increment by 1 per click", async () => {

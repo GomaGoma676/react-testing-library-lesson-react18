@@ -1,9 +1,7 @@
 import React from "react";
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import RenderInput from "./RenderInput";
-
-afterEach(() => cleanup());
 
 describe("Rendering", () => {
   it("Should render all the elements correctly", () => {
