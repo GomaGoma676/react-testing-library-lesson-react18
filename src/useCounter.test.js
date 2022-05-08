@@ -1,5 +1,5 @@
 import { useCounter } from "./useCounter";
-import { act, renderHook } from "@testing-library/react-hooks";
+import { act, renderHook } from "@testing-library/react";
 
 describe("useCounter custom Hook", () => {
   it("Should increment by 1", () => {
