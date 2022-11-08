@@ -7,7 +7,7 @@ describe("extraReducers", () => {
     mode: 0,
     value: 0,
   };
-  it("Should output 100 + payload when fulfiled", () => {
+  it("Should output 100 + payload when fullfiled", () => {
     const action = { type: fetchDummy.fulfilled.type, payload: 5 };
     const state = reducer(initialState, action);
     expect(state.value).toEqual(105);
